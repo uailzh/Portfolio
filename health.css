@@ -1,0 +1,363 @@
+@charset "utf-8";
+
+/*
+    New Perspectives on HTML5 and CSS3, 7th Edition
+    
+    Web Project - Paws & Claws Emporium - Health and Wellness Design    
+    
+    Author: Uail Zhukenov
+       
+
+    Filename: health.css
+*/
+
+
+
+
+/* Reset styles */
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+/* Global styles */
+body {
+font-family: Arial, sans-serif;
+font-size: 16px;
+line-height: 1.5;
+color: #333;
+
+background-color: #fdf0d5;
+}
+
+a {
+color: #333;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+margin-bottom: 1rem;
+}
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+/* Header styles  */
+
+
+header {
+  
+  background-color: #abc4ff;
+  padding: 20px;
+  
+}
+
+header h1 {
+margin: 0;
+}
+
+/* Main styles */
+main {
+margin-top: 6rem;
+padding: 2rem;
+max-width: 1200px;
+margin: 0 auto;
+background-color: #f3f0ed;
+
+
+}
+
+
+
+
+.intro h1 {
+margin-top: 50px;
+margin-bottom: 30px;}
+
+.intro p {
+margin-bottom: 50px;}
+
+
+.product-section {
+margin-bottom: 4rem;
+}
+
+.product-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 2rem;
+}
+
+.product {
+background-color: #fff;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+border-radius: 4px;
+overflow: hidden;
+transition: all 0.3s ease;
+}
+
+.product:hover {
+transform: translateY(-5px);
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product img:first-child {
+width: 100%;
+height: 300px;
+object-fit: cover;
+margin-bottom: -4px;
+}
+
+.product img:last-child {
+width: 100%;
+height: 300px;
+object-fit: cover;
+position: absolute;
+top: 0;
+left: 0;
+opacity: 0;
+transition: opacity 0.3s ease-in-out;
+}
+
+.product:hover img:last-child {
+opacity: 1;
+}
+
+.product h3 {
+font-size: 1.25rem;
+margin: 1rem;
+}
+
+.product p {
+margin: 1rem;
+font-size: 0.9rem;
+line-height: 1.3;
+}
+
+.product button {
+display: block;
+margin: 1rem auto;
+padding: 0.5rem 1rem;
+border: none;
+background-color: #333;
+color: #fff;
+font-size: 1rem;
+letter-spacing: 1px;
+border-radius: 4px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.product button:hover {
+background-color: #fff;
+color: #333;
+border: 1px solid #333;
+}
+
+
+/*footer */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  height: 150px;
+  width: 300px;
+}
+
+.contact-info {
+  margin-right: 400px;
+  margin-left: 100px;
+  margin-top: 30px;
+  
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  
+}
+
+.social-icons img {
+  height: 30px;
+}
+
+
+/* Blog Section */
+
+.blog-section {
+  background-color: #caf0f8;
+}
+
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.blog {
+  width: 30%;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+   border-radius: 5px;
+}
+
+.blog img {
+  width: 100%;
+  height: 200px;
+   border-radius: 5px;
+  object-fit: cover;
+}
+
+
+.blog:hover {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+
+.blog h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.blog p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.blog a {
+  display: inline-block;
+  background-color: #0066cc;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.blog a:hover {
+  background-color: #004c99;
+}
+
+
+
+
+
+
+
+/* nav */
+
+nav.horizontal ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.horizontal li {
+  margin: 0 10px;
+}
+
+nav.horizontal a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav.horizontal a.active {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+nav.horizontal a:hover {
+color: gold;
+}
+
+/* Mobile Devices */
+
+@media screen and (max-width: 480px) {
+  header nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    
+  }
+  header nav ul li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+  }
+  header nav ul li:last-child {
+    border-bottom: none;
+  }
+  header nav ul li a {
+    display: block;
+    padding: 10px;
+  }
+  header nav ul li a.active {
+    background-color: #ccc;
+  }
+  
+  .blog-container {
+  flex-direction: column;
+  
+  }
+  
+  .blog {
+  width: 300px;
+  }
+  
+  .contact-info {
+  margin-left: 350px;
+  margin-bottom: 20px;
+  }
+  
+  }
+
+
+/* Tablet Styles */
+
+@media screen and (max-width: 768px)  {
+
+
+ .contact-info {
+  margin-left: 350px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
+
+
+}

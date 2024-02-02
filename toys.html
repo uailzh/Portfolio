@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!--
+    New Perspectives on HTML5 and CSS3, 7th Edition
+    
+    Web Project - Paws & Claws Emporium - Toys and Accessories Page
+    
+    
+    Author: Uail Zhukenov
+       
+
+    Filename: toys.html
+   -->   
+   
+    <title>Paws & Claws Emporium - Toys & Accessories</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="toys.css" rel="stylesheet" />
+    <script src="toys.js" defer> </script>
+  </head>
+  <body>
+    <header>
+     <nav class="horizontal">
+            <ul>
+                <li><a href="animals_main.html">Home Page</a></li>
+                <li><a href="food_treats.html">Food &amp; Treats</a></li>
+                <li><a href="toys.html" class="active">Toys &amp; Accessories</a></li>
+                <li><a href="health.html">Health &amp; Wellness</a></li>
+                <li><a href="events.html">Events &amp; Community</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+    
+    
+    
+  <main>  
+    
+    <div class="note">
+  <p><strong>Free Delivery!</strong> Check Out Top Sellers</p>
+</div>
+
+
+
+
+<div class="card-container">
+<div class="card">
+  <img src="dc.png" alt="Denim Jeans" style="width:100%">
+  <h1>Cozy Canine Hoodie </h1>
+  <p class="price">$25.99</p>
+  <p>This soft and warm hoodie is perfect for chilly days!</p>
+  <label for="quantity-spinner-1">Quantity:</label>
+<div class="spinner">
+      <input type="number" id="quantity-spinner-1" name="quantity" min="1" value="1">
+      <div class="spinner-buttons">
+        <button type="button" class="spinner-up" onclick="incrementValue('quantity-spinner-1')">+</button>
+        <button type="button" class="spinner-down" onclick="decrementValue('quantity-spinner-1')">-</button>
+      </div>
+    </div>
+<div class="cb">
+  <p><button>Add to Cart</button></p>
+  </div>
+</div>
+
+<div class="card">
+  <img src="dc2.png" alt="Denim Jeans" style="width:100%">
+  <h1>Athletic Pup Hoodie</h1>
+  <p class="price">$35.99</p>
+  <p>This sleek and sporty hoodie is great for active dogs. </p>
+  <label for="quantity-spinner-2">Quantity:</label>
+<div class="spinner">
+      <input type="number" id="quantity-spinner-2" name="quantity" min="1" value="1">
+      <div class="spinner-buttons">
+        <button type="button" class="spinner-up" onclick="incrementValue('quantity-spinner-2')">+</button>
+        <button type="button" class="spinner-down" onclick="decrementValue('quantity-spinner-2')">-</button>
+      </div>
+    </div>
+<div class="cb">
+  <p><button>Add to Cart</button></p>
+  </div>
+</div>
+
+<div class="card">
+  <img src="dc3.png" alt="Denim Jeans" style="width:100%">
+  <h1>Urban Hound Jacket</h1>
+  <p class="price">$39.99</p>
+  <p>This stylish and functional jacket is perfect for city dogs</p>
+  <label for="quantity-spinner-3">Quantity:</label>
+<div class="spinner">
+      <input type="number" id="quantity-spinner-3" name="quantity" min="1" value="1">
+      <div class="spinner-buttons">
+        <button type="button" class="spinner-up" onclick="incrementValue('quantity-spinner-3')">+</button>
+        <button type="button" class="spinner-down" onclick="decrementValue('quantity-spinner-3')">-</button>
+      </div>
+    </div>
+<div class="cb">
+  <p><button>Add to Cart</button></p>
+  </div>
+</div>
+
+</div>
+
+
+
+<div class="card-container">
+<div class="card">
+  <img src="cc.png" alt="Denim Jeans" style="width:100%">
+  <h1>Claw-some Cat  </h1>
+  <p class="price">$19.99</p>
+  <p>Dress your cat up in this fun costume! Let ur pet to be cozy and look fun</p>
+ <label for="quantity-spinner-4">Quantity:</label>
+<div class="spinner">
+      <input type="number" id="quantity-spinner-4" name="quantity" min="1" value="1">
+      <div class="spinner-buttons">
+        <button type="button" class="spinner-up" onclick="incrementValue('quantity-spinner-4')">+</button>
+        <button type="button" class="spinner-down" onclick="decrementValue('quantity-spinner-4')">-</button>
+      </div>
+    </div>
+<div class="cb">
+  <p><button>Add to Cart</button></p>
+  </div>
+</div>
+
+<div class="card">
+  <img src="cc2.png" alt="Denim Jeans" style="width:100%">
+  <h1>Cat-in-the-Box</h1>
+  <p class="price">$55.99</p>
+  <p>This backpack features a transparent bubble window to look out. </p>
+  <label for="quantity-spinner-5">Quantity:</label>
+<div class="spinner">
+      <input type="number" id="quantity-spinner-5" name="quantity" min="1" value="1">
+      <div class="spinner-buttons">
+        <button type="button" class="spinner-up" onclick="incrementValue('quantity-spinner-5')">+</button>
+        <button type="button" class="spinner-down" onclick="decrementValue('quantity-spinner-5')">-</button>
+      </div>
+    </div>
+<div class="cb">
+  <p><button>Add to Cart</button></p>
+  </div>
+</div>
+
+<div class="card">
+  <img src="cc3.png" alt="Denim Jeans" style="width:100%">
+  <h1>Purrfect Hoodie</h1>
+  <p class="price">$21.99</p>
+  <p>This cozy hoodie is made of soft cotton and features a cute cat face. </p>
+  <label for="quantity-spinner-6">Quantity:</label>
+<div class="spinner">
+      <input type="number" id="quantity-spinner-6" name="quantity" min="1" value="1">
+      <div class="spinner-buttons">
+        <button type="button" class="spinner-up" onclick="incrementValue('quantity-spinner-6')">+</button>
+        <button type="button" class="spinner-down" onclick="decrementValue('quantity-spinner-6')">-</button>
+      </div>
+    </div>
+<div class="cb">
+  <p><button>Add to Cart</button></p>
+  </div>
+</div>
+
+</div>
+    
+ 
+
+
+    <div class= "descr">
+    <h1> Toys </h1>
+    <p> We have a vast variety for all kinds of toys in the world. Paws & Claws Emporium 
+    is here to make your furry friends happy as ever. All products are high quality, no chemicals added! </p>
+    <h2> Dog Toys </h2>
+    </div>
+    
+    
+    <div class="card-container">
+<div class="card">
+  <img src="ttt.png" alt="Denim Jeans" style="width:100%">
+  <h1>Fetch Frenzy </h1>
+  <p class="price">$10.25</p>
+  <p>This durable rubber ball is perfect for playing fetch with your dog in the park or backyard!</p>
+  <label for="quantity-spinner-7">Quantity:</label>
+<div class="spinner">
+      <input type="number" id="quantity-spinner-7" name="quantity" min="1" value="1">
+      <div class="spinner-buttons">
+        <button type="button" class="spinner-up" onclick="incrementValue('quantity-spinner-7')">+</button>
+        <button type="button" class="spinner-down" onclick="decrementValue('quantity-spinner-7')">-</button>
+      </div>
+    </div>
+<div class="cb">
+  <p><button>Add to Cart</button></p>
+  </div>
+</div>
+
+<div class="card">
+  <img src="ttt2.png" alt="Denim Jeans" style="width:100%">
+  <h1>Treat Tumbler </h1>
+  <p class="price">$14.99</p>
+  <p>This interactive toy dispenses treats as your dog plays with it. The toy has a tumbler design. </p>
+  <label for="quantity-spinner-8">Quantity:</label>
+<div class="spinner">
+      <input type="number" id="quantity-spinner-8" name="quantity" min="1" value="1">
+      <div class="spinner-buttons">
+        <button type="button" class="spinner-up" onclick="incrementValue('quantity-spinner-8')">+</button>
+        <button type="button" class="spinner-down" onclick="decrementValue('quantity-spinner-8')">-</button>
+      </div>
+    </div>
+<div class="cb">
+  <p><button>Add to Cart</button></p>
+  </div>
+</div>
+
+<div class="card">
+  <img src="ttt3.png" alt="Denim Jeans" style="width:100%">
+  <h1>Chewing Champ</h1>
+  <p class="price">$13.99</p>
+  <p>This tough chew toy is made of indestructible nylon and is perfect for aggressive chewers.</p>
+  <label for="quantity-spinner-9">Quantity:</label>
+<div class="spinner">
+      <input type="number" id="quantity-spinner-9" name="quantity" min="1" value="1">
+      <div class="spinner-buttons">
+        <button type="button" class="spinner-up" onclick="incrementValue('quantity-spinner-9')">+</button>
+        <button type="button" class="spinner-down" onclick="decrementValue('quantity-spinner-9')">-</button>
+      </div>
+    </div>
+<div class="cb">
+  <p><button>Add to Cart</button></p>
+  </div>
+</div>
+</div>
+
+
+
+<div class="cat_toys">
+<h2> Cat Toys </h2>
+</div>
+
+<div class="card-container">
+<div class="card">
+  <img src="ctt.png" alt="Denim Jeans" style="width:100%">
+  <h1>Feather Frenzy </h1>
+  <p class="price">$5.99</p>
+  <p>This interactive cat toy features a feather on a wand that you can wave around to entice cat.</p>
+ <label for="quantity-spinner-10">Quantity:</label>
+<div class="spinner">
+      <input type="number" id="quantity-spinner-10" name="quantity" min="1" value="1">
+      <div class="spinner-buttons">
+        <button type="button" class="spinner-up" onclick="incrementValue('quantity-spinner-10')">+</button>
+        <button type="button" class="spinner-down" onclick="decrementValue('quantity-spinner-10')">-</button>
+      </div>
+    </div>
+<div class="cb">
+  <p><button>Add to Cart</button></p>
+  </div>
+</div>
+
+<div class="card">
+  <img src="ctt2.png" alt="Denim Jeans" style="width:100%">
+  <h1>Catnip Crazies</h1>
+  <p class="price">$7.99</p>
+  <p>These plush cat toys are filled with catnip and come in various shapes and sizes. </p>
+ <label for="quantity-spinner-11">Quantity:</label>
+<div class="spinner">
+      <input type="number" id="quantity-spinner-11" name="quantity" min="1" value="1">
+      <div class="spinner-buttons">
+        <button type="button" class="spinner-up" onclick="incrementValue('quantity-spinner-11')">+</button>
+        <button type="button" class="spinner-down" onclick="decrementValue('quantity-spinner-11')">-</button>
+      </div>
+    </div>
+<div class="cb">
+  <p><button>Add to Cart</button></p>
+  </div>
+</div>
+
+<div class="card">
+  <img src="ctt3.png" alt="Denim Jeans" style="width:100%">
+  <h1>Scratching Sens</h1>
+  <p class="price">$11.99</p>
+  <p>This scratching post toy is perfect for cats who love to scratch. Let it play and bring joy to ur cat!</p>
+  <label for="quantity-spinner-12">Quantity:</label>
+<div class="spinner">
+      <input type="number" id="quantity-spinner-12" name="quantity" min="1" value="1">
+      <div class="spinner-buttons">
+        <button type="button" class="spinner-up" onclick="incrementValue('quantity-spinner-12')">+</button>
+        <button type="button" class="spinner-down" onclick="decrementValue('quantity-spinner-12')">-</button>
+      </div>
+    </div>
+<div class="cb">
+  <p><button>Add to Cart</button></p>
+  </div>
+</div>
+
+</div>
+    
+    
+    <div class="descr">
+    <h1>Pet Accessories</h1>
+    <p>Here at Paws & Claws Emporium, we have everything you need to keep your furry friends healthy and stylish. Our products are made of high-quality materials and are designed to enhance the comfort and well-being of your pets.</p>
+    <h2>Dog Accessories</h2>
+    <p>Our dog accessories range from practical items like collars, leashes, and harnesses to fashionable items like bandanas and bow ties. We also offer a variety of grooming tools, including brushes, shampoos, and nail clippers, to help keep your dog looking and feeling their best.</p>
+    </div>
+    
+    
+    <div class="card-container">
+<div class="card">
+  <img src="ddd1.png" alt="Denim Jeans" style="width:100%">
+  <h1>Voyager Step-In Air Dog Harness </h1>
+  <p class="price">$15.99</p>
+  <p>An easy-to-use and breathable harness with a secure fit.</p>
+  <label for="quantity-spinner-13">Quantity:</label>
+<div class="spinner">
+      <input type="number" id="quantity-spinner-13" name="quantity" min="1" value="1">
+      <div class="spinner-buttons">
+        <button type="button" class="spinner-up" onclick="incrementValue('quantity-spinner-13')">+</button>
+        <button type="button" class="spinner-down" onclick="decrementValue('quantity-spinner-13')">-</button>
+      </div>
+    </div>
+    <div class="cb">
+  <p><button>Add to Cart</button></p>
+  </div>
+</div>
+
+<div class="card">
+  <img src="ddd2.png" alt="Denim Jeans" style="width:100%">
+  <h1>PoyPet No Pull Dog Harness</h1>
+  <p class="price">$27.99</p>
+  <p> A comfortable and secure harness that prevents pulling. </p>
+  <label for="quantity-spinner-14">Quantity:</label>
+<div class="spinner">
+      <input type="number" id="quantity-spinner-14" name="quantity" min="1" value="1">
+      <div class="spinner-buttons">
+        <button type="button" class="spinner-up" onclick="incrementValue('quantity-spinner-14')">+</button>
+        <button type="button" class="spinner-down" onclick="decrementValue('quantity-spinner-14')">-</button>
+      </div>
+    </div>
+<div class="cb">
+  <p><button>Add to Cart</button></p>
+  </div>
+</div>
+
+<div class="card">
+  <img src="ddd3.png" alt="Denim Jeans" style="width:100%">
+  <h1>Soft Mesh Dog Cozy Harness</h1>
+  <p class="price">$12.99</p>
+  <p>A lightweight and breathable harness that's perfect for dogs</p>
+  <label for="quantity-spinner-15">Quantity:</label>
+<div class="spinner">
+      <input type="number" id="quantity-spinner-15" name="quantity" min="1" value="1">
+      <div class="spinner-buttons">
+        <button type="button" class="spinner-up" onclick="incrementValue('quantity-spinner-15')">+</button>
+        <button type="button" class="spinner-down" onclick="decrementValue('quantity-spinner-15')">-</button>
+      </div>
+    </div>
+<div class="cb">
+  <p><button>Add to Cart</button></p>
+  </div>
+</div>
+
+</div>
+
+
+<div class="cat_toys">
+<h2> Cat Accessories </h2>
+ <p>For our feline friends, we have a wide selection of cat accessories, including scratchers, litter boxes, and cat trees. We also offer grooming tools and products, such as brushes, combs, and cat shampoo, to help keep your cat looking and feeling their best.</p>
+</div>
+
+
+
+
+<div class="card-container">
+<div class="card">
+  <img src="ppp.png" alt="Denim Jeans" style="width:100%">
+  <h1>PetSafe Kitty Harness </h1>
+  <p class="price">$9.99</p>
+  <p>A comfortable and adjustable harness that allows for control</p>
+  <label for="quantity-spinner-16">Quantity:</label>
+<div class="spinner">
+      <input type="number" id="quantity-spinner-16" name="quantity" min="1" value="1">
+      <div class="spinner-buttons">
+        <button type="button" class="spinner-up" onclick="incrementValue('quantity-spinner-16')">+</button>
+        <button type="button" class="spinner-down" onclick="decrementValue('quantity-spinner-16')">-</button>
+      </div>
+    </div>
+<div class="cb">
+  <p><button>Add to Cart</button></p>
+  </div>
+</div>
+
+<div class="card">
+  <img src="ppp2.png" alt="Denim Jeans" style="width:100%">
+  <h1>EasySport Cat Harness </h1>
+  <p class="price">$17.99</p>
+  <p>A lightweight and comfortable harness that's easy to put on. </p>
+  <label for="quantity-spinner-17">Quantity:</label>
+<div class="spinner">
+      <input type="number" id="quantity-spinner-17" name="quantity" min="1" value="1">
+      <div class="spinner-buttons">
+        <button type="button" class="spinner-up" onclick="incrementValue('quantity-spinner-17')">+</button>
+        <button type="button" class="spinner-down" onclick="decrementValue('quantity-spinner-17')">-</button>
+      </div>
+    </div>
+<div class="cb">
+  <p><button>Add to Cart</button></p>
+  </div>
+</div>
+
+<div class="card">
+  <img src="ppp3.png" alt="Denim Jeans" style="width:100%">
+  <h1> Dexil Elite Cat Harness</h1>
+  <p class="price">$13.99</p>
+  <p>A durable and stylish harness with reflective stitching for visibility</p>
+  <label for="quantity-spinner-18">Quantity:</label>
+<div class="spinner">
+      <input type="number" id="quantity-spinner-18" name="quantity" min="1" value="1">
+      <div class="spinner-buttons">
+        <button type="button" class="spinner-up" onclick="incrementValue('quantity-spinner-18')">+</button>
+        <button type="button" class="spinner-down" onclick="decrementValue('quantity-spinner-18')">-</button>
+      </div>
+    </div>
+<div class="cb">
+  <p><button>Add to Cart</button></p>
+  </div>
+</div>
+
+</div>
+
+
+ <section class="encouragement">
+  <h2>Give Your Pet the Best Experience with Our Premium Toys, Clothes and Accessories</h2>
+  <p> At our store, we are committed to providing pet owners with the highest quality toys, clothes, and accessories that ensure their furry friends have the best experience possible. We understand that pets are more than just animals, they are beloved members of the family, and we strive to offer products that reflect that sentiment. Our selection of toys is designed to engage your pet's senses and provide hours of entertainment, while our clothes and accessories are both functional and stylish. </p>
+  <p>Order now and give your pet the Comfort and Joy they deserve!</p>
+  <button class="see-more">See More</button>
+</section>
+</main>
+
+     <footer>
+  <div class="foot">
+    <div class="footer-content">
+      <div class="logo1">
+        <img src="body.png" alt="Logo">
+      </div>
+      <div class="social-icons">
+        <a href="#"><img src="insta.png" alt="Instagram"></a>
+        <a href="#"><img src="face.png" alt="Facebook"></a>
+        <a href="#"><img src="look.png" alt="Look"></a>
+        <a href="#"><img src="what.png" alt="What"></a>
+      </div>
+      <div class="contact-info">
+        <h3>Contact Info</h3>
+        <ul>
+          <li> 123-456-7890</li>
+          <li> info@company.com</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer> 
+
+
+
+    
+    
+    </body>
+    
+    
+    
+    </html>

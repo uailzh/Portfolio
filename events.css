@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+/*
+    New Perspectives on HTML5 and CSS3, 7th Edition
+    
+    Web Project - Paws & Claws Emporium - Events design    
+    
+    Author: Uail Zhukenov
+    
+
+    Filename: events.css
+*/
+
+
+/* Styles for header */
+
+header {
+  background-color: #0077b6;
+  padding: 20px;
+  
+}
+
+body {
+background-color: #03045e;
+color: #fdf0d5;
+}
+
+/* nav */
+
+nav.horizontal ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.horizontal li {
+  margin: 0 10px;
+}
+
+nav.horizontal a {
+  color: #fdf0d5;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav.horizontal a.active {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+nav.horizontal a:hover {
+color: #d138bf;
+}
+
+/* Styles for main */
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #3d2a78;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.events {
+  margin: 50px 0;
+}
+
+.events h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.events ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.events li {
+  margin: 20px;
+  text-align: center;
+  width: 300px;
+}
+
+.events li img {
+  max-width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.events li h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.events li p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.events li p strong {
+  font-weight: bold;
+}
+
+.community {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.community img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.community h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.community p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icons img {
+  max-width: 40px;
+  height: auto;
+}
+
+/* Styles for footer */
+
+footer {
+  background-color: #0077b6;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav.vertical ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.vertical li {
+  margin: 10px 0;
+}
+
+nav.vertical a {
+  color: #fdf0d5;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+/* Mobile Devices */
+
+@media screen and (max-width: 480px) {
+  header nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    
+  }
+  header nav ul li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+  }
+  header nav ul li:last-child {
+    border-bottom: none;
+  }
+  header nav ul li a {
+    display: block;
+    padding: 10px;
+  }
+  header nav ul li a.active {
+    background-color: #ccc;
+  }
+  }
+

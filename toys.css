@@ -1,0 +1,373 @@
+@charset "utf-8";
+
+/*
+    New Perspectives on HTML5 and CSS3, 7th Edition
+    
+    Web Project - Paws & Claws Emporium - Toys Design 
+    
+    Author: Uail Zhukenov
+       
+
+    Filename: toys.css
+*/
+
+
+/* Structural Section */
+
+
+
+/* Reset styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #cae9ff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+
+header {
+  background-color: #ffc8dd;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff6600;
+}
+
+ a.active {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+/* Note styles */
+
+.note {
+  background-color: #ff6600;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Card styles */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.card {
+  width: 300px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: #e1e5f2;
+ 
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+
+.card h1 {
+  font-size: 24px;
+  margin: 10px;
+}
+
+.card p {
+  margin: 10px;
+}
+
+.card .price {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.cb button {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 80px;
+}
+
+.spinner-buttons button {
+  
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.spinner {
+margin-left: 110px;}
+
+label {
+margin-left: 105px;}
+
+.spinner-up {
+
+  background-color: green;
+}
+
+.spinner-down {
+
+  background-color: red;
+  
+}
+
+
+input {
+width: 50px;}
+
+.cb button:hover {
+  background-color: #ff4d00;
+}
+
+.card:hover h1 {
+  color: red;
+}
+
+
+
+
+/* Description styles */
+
+.descr {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.descr h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.descr h2 {
+  font-size: 24px;
+  margin: 50px 0 20px;
+}
+
+.cat_toys h2 {
+margin-top: 50px;
+margin-bottom: 50px;
+text-align: center;}
+
+.cat_toys p {
+margin-right: 50px;
+margin-left: 50px;}
+
+.descr p {
+margin-right: 50px;
+margin-left: 50px;}
+
+
+/* Footer Section */
+footer {
+ background-color: #979dac;
+  padding: 30px 0;
+  font-family: Arial, sans-serif;
+}
+
+.foot {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo1 {
+  flex-basis: 30%;
+  max-width: 200px;
+}
+
+.logo1 img {
+  max-width: 100%;
+}
+
+.social-icons {
+  flex-basis: 20%;
+  text-align: center;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.social-icons a img {
+  width: 100%;
+  height: 100%;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.contact-info {
+  flex-basis: 50%;
+  text-align: right;
+}
+
+.contact-info h3 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 80px;
+}
+
+.contact-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-info li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.contact-info li i {
+  margin-right: 5px;
+}
+
+.contact-info li:hover {
+  transform: scale(1.2);
+}
+
+/* Encouragement */
+
+.encouragement {
+  
+  padding: 20px;
+  text-align: center;
+}
+
+.encouragement h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.encouragement p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.see-more {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.see-more:hover {
+  background-color: #3e8e41;
+}
+
+
+/* Mobile Devices */
+
+@media screen and (max-width: 480px) {
+  header nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    
+  }
+  header nav ul li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+  }
+  header nav ul li:last-child {
+    border-bottom: none;
+  }
+  header nav ul li a {
+    display: block;
+    padding: 10px;
+  }
+  header nav ul li a.active {
+    background-color: #ccc;
+  }
+  
+  .contact-info h3 {
+  margin-right: 20px;
+}
+
+.social-icons {
+display: flex;
+  flex-direction: row;
+  
+}
+
+.contact-info {
+margin-top: 30px;
+margin-left: 70px;
+}
+
+  }
+

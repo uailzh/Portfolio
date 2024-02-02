@@ -1,0 +1,379 @@
+@charset "utf-8";
+
+/*
+    New Perspectives on HTML5 and CSS3, 7th Edition
+    
+    Web Project - Paws & Claws Emporium - Food and Treats design    
+    
+    Author: Uail Zhukenov
+    
+
+    Filename: food.css
+*/
+
+
+/* Structural Section */
+
+
+/* CSS for Paws & Claws Emporium */
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5DC;
+}  
+
+h1, h2 {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photos img {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+}
+
+
+/* Header styles */
+
+header {
+  background-color: #aeddeb;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+nav.horizontal ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.horizontal li {
+  margin: 0 10px;
+}
+
+nav.horizontal a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav.horizontal a.active {
+  color: black;
+  border-bottom: 2px solid #000;
+}
+
+nav.horizontal a:hover {
+color: gold;
+}
+
+
+/* Main content styles */
+
+
+.dog_head {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.description {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.photos img {
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.prev, .next {
+  font-size: 20px;
+  margin: 0 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.prev:hover, .next:hover {
+  color: #555;
+}
+
+/* Top sellers styles */
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  margin-bottom: 20px;
+}
+
+.image-wrapper {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+  width: 300px;
+}
+
+.image-wrapper img {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+}
+
+.order-button {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/* Footer Section */
+
+footer {
+  background-color: #d65f59;
+  padding: 30px 0;
+  font-family: Arial, sans-serif;
+}
+
+.foot {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo1 {
+  flex-basis: 30%;
+  max-width: 200px;
+}
+
+.logo1 img {
+  max-width: 100%;
+}
+
+.social-icons {
+  flex-basis: 20%;
+  text-align: center;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.social-icons a img {
+  width: 100%;
+  height: 100%;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.contact-info {
+  flex-basis: 50%;
+  text-align: right;
+}
+
+.contact-info h3 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 80px;
+}
+
+.contact-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-info li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.contact-info li i {
+  margin-right: 5px;
+}
+
+.contact-info li:hover {
+  transform: scale(1.2);
+}
+
+/* Encouragement */
+
+.encouragement {
+  
+  padding: 20px;
+  text-align: center;
+}
+
+.encouragement h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.encouragement p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.see-more {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.see-more:hover {
+  background-color: #3e8e41;
+}
+
+
+/* Mobile Devices */
+
+@media screen and (max-width: 480px) {
+  header nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    
+  }
+  header nav ul li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+  }
+  header nav ul li:last-child {
+    border-bottom: none;
+  }
+  header nav ul li a {
+    display: block;
+    padding: 10px;
+  }
+  header nav ul li a.active {
+    background-color: #ccc;
+  }
+   .scroll {
+  flex-direction: column;}
+  
+  .contact-info h3 {
+  margin-right: 20px;
+}
+
+.social-icons {
+display: flex;
+  flex-direction: row;
+  
+}
+
+.contact-info {
+margin-top: 30px;
+margin-left: 70px;
+}
+
+  }
+
+
+
+
+
+
+
